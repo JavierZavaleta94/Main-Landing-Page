@@ -1,0 +1,544 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:focus, a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  font-family: monospace;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+/*======================================== Section 1 ==========================================================*/
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.nav-bar{
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-links{
+  display: block;
+  text-align: center;
+  padding: 2vh 5vh;
+  text-decoration: none;
+  font-size: 2vh;
+  color: white;
+}
+
+.nav-links:hover{
+  text-decoration: none;
+  transform: scale(1.2);
+  color: cyan;
+
+}
+
+.slideshow-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  font-family: cursive;
+  font-size: 4vw;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.mySlides1 {
+  display: none;
+  background-color: black;
+
+}
+.mySlides1 img {
+  vertical-align: middle;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 4vw;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+/*======================================== Section 2 ==========================================================*/
+
+.commercial-container {
+    background-color: whitesmoke;
+}
+
+.commercial-one, .commercial-three{
+  display: flex;
+}
+
+.commercial-two {
+  display: flex;
+}
+
+.commercial-two p{
+  float: left;
+}
+
+.commercial-two img{
+  float: right;
+}
+
+.commercial-one img, .commercial-two img, .commercial-three img{
+  height: auto;
+  width: 50%;
+}
+
+.commercial-one p, .commercial-two p, .commercial-three p{
+  width: 40%;
+  margin: 0 auto;
+  align-self: center;
+  font-size: 2.3vh;
+}
+
+/*======================================== Section 3 ==========================================================*/
+.container{
+  width: 100%;
+}
+
+.skill-question {
+  text-align: center;
+  margin: 0 auto;
+  padding: 4vh 0;
+  font-size: 4vh;
+  font-weight: bold;
+}
+
+.icons-row-1 {
+  padding: 0 10%;
+}
+
+.box-divider {
+  text-align: center;
+  width: 33%;
+}
+
+.box-divider i{
+  font-size: 6vh;
+}
+
+.box-divider p{
+  font-size: 2.3vh;
+  margin: 0 0 4vh;
+}
+
+/*======================================== Section 4 ==========================================================*/
+
+.sign-up-container {
+    padding: 5vh 0;
+    background-color: whitesmoke;
+}
+
+.quote {
+  text-align: center;
+  font-size: 3.5vh;
+  font-weight: bold;
+  margin: 0 0 4vh 0;
+}
+
+.message {
+  width: 70%;
+  margin: 3vh auto;
+  font-size: 2vh;
+  border: 1px black outset;
+  padding: 4vh;
+}
+
+.message p{
+  text-align: center;
+}
+
+.message-sign-up{
+  font-size: 2vh;
+}
+
+.form{
+  text-align: center;
+}
+
+.form p{
+  font-size: 3vh;
+}
+
+.email-input{
+  width: 40%;
+  display: inline-block;
+}
+
+.message-btn{
+  display: block;
+  margin: auto;
+}
+
+.email-btn:hover, .message-btn:hover{
+  transform: scale(1.1);
+}
+
+/*======================================== Social Media =======================================================*/
+
+.social-media-container {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 0 0 3vh 0;
+}
+
+.social-media-container p {
+  font-size: 2vh;
+}
+
+.social-links{
+  font-size: 4vh;
+  margin: 0 9px;
+  color: black;
+}
+
+.social-links i:hover{
+  transform: scale(1.2);
+  color: cyan;
+
+}
+/*========================================= Footer ============================================================*/
+.footer{
+  background-color: black;
+  color: white;
+  padding: 1vh 0;
+}
+
+.footer p{
+  margin: 0;
+}
+
+/*======================================== Media Query ========================================================*/
+@media only screen and (max-width: 414px)  {
+
+/*Section 1*/
+
+.nav-links{
+  font-size: 1vh;
+}
+
+.mySlides1 img {
+  height: 25vh;
+}
+
+/*Section 2*/
+
+.commercial-one p, .commercial-two p, .commercial-three p {
+  font-size: 1vh;
+}
+
+/*Section 3*/
+
+.skill-question {
+  font-size: 2vh;
+  padding: 2vh 0;
+}
+
+.box-divider {
+  width: 48%;
+  display: table-header-group;
+  float: none;
+}
+
+.box-divider p{
+  font-size: 1vh;
+  margin: 0 0 2vh;
+}
+
+.box-divider i{
+  font-size: 3vh;
+}
+
+/*Section 4*/
+
+.quote{
+  font-size: 1.5vh;
+  margin: 0 0 2vh 0;
+}
+
+.message {
+  width: 80%;
+  font-size: 1vh;
+  margin: 0 auto 2vh auto;
+  padding: 2vh;
+}
+
+.message-sign-up {
+    font-size: 1.5vh;
+}
+
+.message-btn, .email-btn{
+  font-size: 10px;
+}
+
+.form p{
+  font-size: 2vh;
+}
+
+.email-input{
+  font-size: 10px;
+  height: initial;
+}
+
+.social-links {
+    font-size: 2vh;
+}
+}
+
+@media only screen and (min-width: 415px) and (max-width: 749px)  {
+
+/*Section 1*/
+
+.nav-links{
+  font-size: 1.5vh;
+}
+
+.mySlides1 img {
+  height: 50vh;
+}
+
+/*Section 2*/
+
+.commercial-one p, .commercial-two p, .commercial-three p {
+  font-size: 1.5vh;
+}
+
+/*Section 3*/
+
+.skill-question {
+  font-size: 2vh;
+}
+
+.box-divider {
+width: 48%;
+display: inline-table;
+float: none;
+}
+
+.box-divider p{
+  font-size: 1.5vh;
+  margin: 0 0 3vh;
+}
+
+.box-divider i{
+  font-size: 4vh;
+}
+
+/*Section 4*/
+
+.quote{
+  font-size: 2vh;
+}
+
+.message {
+  width: 80%;
+  font-size: 1.5vh;
+  margin: 0 auto 3vh auto;
+  padding: 2vh;
+}
+
+.message-sign-up {
+  font-size: 2vh;
+}
+
+.message-btn, .email-btn{
+  font-size: 12px;
+}
+
+.form p{
+  font-size: 2vh;
+}
+
+.email-input{
+  font-size: 12px;
+  height: initial;
+}
+
+.social-links {
+    font-size: 3vh;
+}
+
+}
+
+
+@media only screen and (min-width: 750px) and (max-width: 899px)  {
+
+/*Section 1*/
+
+.nav-links{
+  font-size: 1.8vh;
+}
+
+.mySlides1 img{
+    height: 75vh;
+}
+
+/*Section 2*/
+
+.commercial-one p, .commercial-two p, .commercial-three p{
+    font-size: 1.8vh;
+}
+
+/*Section 3*/
+
+.skill-question {
+  font-size: 2.5vh;
+}
+
+.box-divider {
+  width: 49%;
+  display: inline-table;
+  float: none;
+}
+
+.box-divider p{
+  font-size: 1.8vh;
+  margin: 0 0 3vh;
+}
+
+.box-divider i{
+  font-size: 5vh;
+}
+
+/*Section 4*/
+
+.quote{
+  font-size: 2.5vh;
+}
+
+.message {
+  width: 80%;
+  font-size: 1.8vh;
+  margin: 0 auto 3vh auto;
+  padding: 2vh;
+}
+
+.message-sign-up {
+    font-size: 2.5vh;
+}
+
+.message-btn, .email-btn{
+  font-size: 12px;
+}
+
+
+.form p{
+  font-size: 2.5vh;
+}
+
+.email-input{
+  font-size: 12px;
+  height: initial;
+}
+
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1399px)  {
+
+/*Section 1*/
+
+
+.mySlides1 img{
+  height: 75vh;
+}
+
+/*Section 2*/
+
+.commercial-one p, .commercial-two p, .commercial-three p{
+  font-size: 2vh;
+}
+
+/*Section 3*/
+
+.skill-question {
+  font-size: 3vh;
+}
+
+.box-divider {
+  width: 49%;
+  display: inline-table;
+  float: none;
+}
+
+.box-divider p{
+  font-size: 2vh;
+  margin: 0 0 4vh;
+}
+
+/*Section 4*/
+
+.quote{
+  font-size: 3vh;
+}
+
+.message {
+  margin: 0 auto 3vh auto;
+  padding: 2vh;
+}
+
+
+
+}
+
+@media only screen and (max-height: 600px)  {
+  /*Section 2*/
+  .commercial-one p, .commercial-two p, .commercial-three p{
+    font-size: 2.5vh;
+  }
+
+  /*Section 3*/
+  .box-divider p{
+    font-size: 2.5vh;
+  }
+
+  .message {
+    font-size: 2.5vh;
+  }
+}
